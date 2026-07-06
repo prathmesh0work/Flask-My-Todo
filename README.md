@@ -16,7 +16,7 @@
 
 ### 📸 Preview
 
-![MyTodo Screenshot](static/screenshot.png)
+![MyTodo Screenshot](MyTodo Screenshot.png)
 
 ---
 
