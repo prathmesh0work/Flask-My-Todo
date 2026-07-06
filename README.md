@@ -14,12 +14,6 @@
 
 ---
 
-### 📸 Preview
-
-![MyTodo Screenshot](MyTodo Screenshot.png)
-
----
-
 ## 🧠 What is this?
 
 **MyTodo** is a full-stack, CRUD-powered task manager. It's small on purpose — no bloat, no over-engineering — just a Flask backend talking to a SQLite database, rendering clean Jinja templates styled with Bootstrap 5.
