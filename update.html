@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% block body %}
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/">Update Todo</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container my-3">
+        <form action="/update/{{ todo.SNo }}" method="POST">
+            <div class="mb-3">
+                <label for="title" class="form-label">To do title</label>
+                <input type="text" class="form-control" name="title" value="{{ todo.title }}" id="title" autocomplete="off" required>
+            </div>
+            <div class="mb-3">
+                <label for="desc" class="form-label">Todo description</label>
+                <input type="text" class="form-control" name="desc" value="{{ todo.description }}" id="desc" autocomplete="off" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Update</button>
+            <a href="/" class="btn btn-secondary">Cancel</a>
+        </form>
+    </div>
+{% endblock body %}
