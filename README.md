@@ -56,8 +56,7 @@ mytodo/
 ### 1. Clone the repo
 
 ```bash
-git clone https://github.com/prathmesh0work/mytodo.git
-cd mytodo
+https://github.com/prathmesh0work/Flask-My-Todo.git
 ```
 
 ### 2. Create a virtual environment
